@@ -1,0 +1,8 @@
+# WordPress Email Scraper - Sample URLs
+# One URL per line, comments start with #
+
+example-wp-site1.com
+example-wp-site2.com
+another-wordpress-site.org
+myblog.wordpress.com
+company-website.net

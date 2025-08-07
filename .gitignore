@@ -73,8 +73,12 @@ jspm_packages/
 # Output files
 output/
 *.csv
-*.json
-*.txt
+output/*.json
+output/*.txt
+
+# Allow important project files
+!package.json
+!sample-urls.txt
 
 # IDE files
 .vscode/
