@@ -4,14 +4,16 @@ A powerful Node.js application designed to identify WordPress websites and extra
 
 ## ✨ Features
 
-- **WordPress Detection**: Automatically identifies WordPress-powered websites using multiple detection methods
-- **Email Extraction**: Finds email addresses from various page sources (contact pages, about pages, etc.)
-- **Contact Information**: Extracts additional contact details including phone numbers and social media links
-- **Data Export**: Exports results to CSV, JSON, and plain text formats
-- **Respectful Scraping**: Built-in rate limiting and respectful request handling
-- **Interactive CLI**: User-friendly command-line interface with multiple operation modes
-- **Batch Processing**: Process multiple URLs efficiently with progress tracking
-- **Detailed Reporting**: Comprehensive reports with statistics and insights
+- **🔍 Google Search Integration**: Automatically find WordPress websites using targeted Google searches
+- **🏢 Industry-Specific Targeting**: Built-in search queries for agencies, e-commerce, blogs, and more
+- **🎯 WordPress Detection**: Automatically identifies WordPress-powered websites using multiple detection methods
+- **📧 Email Extraction**: Finds email addresses from various page sources (contact pages, about pages, etc.)
+- **📞 Contact Information**: Extracts additional contact details including phone numbers and social media links
+- **📊 Data Export**: Exports results to CSV, JSON, and plain text formats
+- **⏱️ Respectful Scraping**: Built-in rate limiting and respectful request handling
+- **💻 Interactive CLI**: User-friendly command-line interface with multiple operation modes
+- **📈 Batch Processing**: Process multiple URLs efficiently with progress tracking
+- **📋 Detailed Reporting**: Comprehensive reports with statistics and insights
 
 ## 🚀 Installation
 
@@ -39,10 +41,37 @@ A powerful Node.js application designed to identify WordPress websites and extra
 npm start interactive
 ```
 
-This will guide you through the scraping process with prompts for:
-- URL input method (manual, file, or sample sites)
+This will guide you through the prospecting process with prompts for:
+- Search method (Google search, manual URLs, file, or sample sites)
+- Industry targeting or keyword searches
 - Configuration options
 - Output preferences
+
+### Google Search Commands
+
+#### Find WordPress sites by industry
+```bash
+npm start find --industry agencies
+npm start find --industry ecommerce
+npm start find --industry blogs
+```
+
+#### Search by keywords
+```bash
+npm start find --keywords "web design,marketing"
+npm start find --keywords "restaurant,food"
+```
+
+#### Quick industry searches
+```bash
+npm start find-agencies --max-results 50
+npm start find-ecommerce --max-results 30
+```
+
+#### Advanced Google search
+```bash
+npm start find --queries "site:*/wp-content/,inurl:wp-admin" --max-results 100
+```
 
 ### Command Line Usage
 
